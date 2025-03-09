@@ -12,12 +12,12 @@ st.set_page_config(page_title="E-Commerce Data Analysis", layout="wide")
 @st.cache_data
 def load_data():
     """Load CSV datasets into DataFrames."""
-    customer_df = pd.read_csv("AnalisaDBS1/data/customer_dataset.csv")
-    order_df = pd.read_csv("AnalisaDBS1/data/order_dataset.csv")
-    order_items_df = pd.read_csv("AnalisaDBS1/data/order_items_dataset.csv")
-    order_payments_df = pd.read_csv("AnalisaDBS1/data/order_payments_dataset.csv")
-    product_df = pd.read_csv("AnalisaDBS1/data/product_dataset.csv")
-    seller_df = pd.read_csv("AnalisaDBS1/data/seller_dataset.csv")
+    customer_df = pd.read_csv("customer_dataset.csv")
+    order_df = pd.read_csv("order_dataset.csv")
+    order_items_df = pd.read_csv("order_items_dataset.csv")
+    order_payments_df = pd.read_csv("order_payments_dataset.csv")
+    product_df = pd.read_csv("product_dataset.csv")
+    seller_df = pd.read_csv("seller_dataset.csv")
     return (
         customer_df,
         order_df,
